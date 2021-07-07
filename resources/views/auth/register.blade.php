@@ -75,14 +75,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Add image') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="image" type="file" class="form-control" name="image" autocomplete="image">
-                            </div>
-                        </div>
-
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

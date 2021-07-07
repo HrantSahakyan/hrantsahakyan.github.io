@@ -31,7 +31,7 @@
                         <p>{{$last_post->body}}</p>
                         <img src="{{asset('images/'.$last_post->theme.'.png')}}">
                         <address class="text-right font-italic">
-                            Author: {{\Illuminate\Support\Facades\DB::table('users')->where('id',$last_post->author_id)->get()->first()->name . ' ' . \Illuminate\Support\Facades\DB::table('users')->where('id',$last_post->author_id)->get()->first()->lastname}} <br>
+                            Author:<img src="{{asset('/storage/profile_pictures/'.\Illuminate\Support\Facades\DB::table('users')->where('id',$last_post->author_id)->get()->first()->image) }}" class="profile_picture_small" alt="prof pic" width=30" height="30" > {{\Illuminate\Support\Facades\DB::table('users')->where('id',$last_post->author_id)->get()->first()->name . ' ' . \Illuminate\Support\Facades\DB::table('users')->where('id',$last_post->author_id)->get()->first()->lastname}} <br>
                             Last edited at: {{$last_post->updated_at}} <br>
                             Theme: <a href="../read/{{$last_post->theme}}">{{$last_post->theme}}</a>
                         </address>

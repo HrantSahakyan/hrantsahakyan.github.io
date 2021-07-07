@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Input;
+use App\Models\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +35,7 @@ Route::middleware(['auth'])->group(function (){
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/home/upload', [App\Http\Controllers\HomeController::class, 'upload'])->name('home-upload');
 Route::post('/post', [App\Http\Controllers\PostController::class, 'store'])->name('store');
 Route::get('/post/random', [App\Http\Controllers\PostController::class, 'random'])->name('random');
 Route::get('/read', [App\Http\Controllers\PostController::class, 'index'])->name('read');

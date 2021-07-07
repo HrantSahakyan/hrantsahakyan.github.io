@@ -10718,3 +10718,8 @@ a:hover {
 #image{
     padding: 3px;
 }
+.profile_picture_small{
+    width: 30px !important;
+    margin: 5px;
+    border-radius: 50%;
+}

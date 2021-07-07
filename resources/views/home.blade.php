@@ -16,16 +16,17 @@
     </div>
     <div class="area" >
         <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="text-center align-content-center bg-transparent"><span>Education</span></li>
+            <li class="text-center align-content-center"><span>Sport</span></li>
+            <li class="text-center align-content-center "><span>Science</span></li>
+            <li class="text-center align-content-center bg-transparent"><span>Music</span></li>
+            <li class="text-center align-content-center "><span>Books</span></li>
+            <li class="text-center align-content-center bg-transparent"><span>Films</span></li>
+            <li class="text-center align-content-center"><span>Music</span></li>
+            <li class="text-center align-content-center "><span>Science</span></li>
+            <li class="text-center align-content-center bg-transparent"><span>Sport</span></li>
+            <li class="text-center align-content-center"><span>Education</span></li>
+            <li class="text-center align-content-center "><span>Films</span></li>
         </ul>
         @endsection
 

@@ -12,7 +12,7 @@
                     <p>{{$item->body}}</p>
                     <img src="{{asset('images/'.$item->theme.'.png')}}">
                     <address class="text-right font-italic">
-                        Author: {{\Illuminate\Support\Facades\DB::table('users')->where('id',$item->author_id)->get()->first()->name . ' ' . \Illuminate\Support\Facades\DB::table('users')->where('id',$item->author_id)->get()->first()->lastname}} <br>
+                        Author:<img src="{{asset('/storage/profile_pictures/'.\Illuminate\Support\Facades\DB::table('users')->where('id',$item->author_id)->get()->first()->image) }}" class="profile_picture_small" alt="prof pic" width=30" height="30" > {{\Illuminate\Support\Facades\DB::table('users')->where('id',$item->author_id)->get()->first()->name . ' ' . \Illuminate\Support\Facades\DB::table('users')->where('id',$item->author_id)->get()->first()->lastname}} <br>
                         Last edited at: {{$item->updated_at}} <br>
                         Theme: <a href="../read/{{$item->theme}}">{{$item->theme}}</a>
                     </address>
