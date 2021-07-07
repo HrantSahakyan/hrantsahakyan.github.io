@@ -2459,9 +2459,10 @@ fieldset:disabled a.btn {
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #2176bd;
+  background-color: #2176bd !important;
   border-color: #1f6fb2;
 }
+
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(82, 161, 225, 0.5);
 }
@@ -10557,7 +10558,12 @@ a:hover {
 }
 @media only  screen and (max-width: 991px){
     .btn-auth{ margin: 0; }
-    .login{ margin-bottom: 20px; }
+    .login{ margin-right: 20px; }
+}
+@media only  screen and (max-width: 767px){
+    .btn-auth{ margin: 0; }
+    .login{ margin: 0 auto 20px auto}
+    .show{background: #2176bd !important;}
 }
 .about-us-header{
     background: #4E54C8;
